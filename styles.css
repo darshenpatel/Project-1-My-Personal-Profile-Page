@@ -43,16 +43,17 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #3eb991;
+    font-size: 18px;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
-  transition: all .5s;
+  transition: all .25s;
 }
 .nav a:hover {
-  color: white
+  color: #e9a820;
 }
 
 header {
@@ -63,12 +64,13 @@ header {
   padding-top: 60px;
 }
 
+
 header {
-  line-height: 1.5;
+  line-height: 1.5 ;
 }
 
+
 header .profile-image {
-  text-align: center;
   margin-top: 50px;
   width: 150px;
   height: 150px;
@@ -77,8 +79,11 @@ header .profile-image {
   transition: all .5s;
 }
 
+
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
+  border: 3px solid black;
+
 }
 
 .tag {
@@ -88,18 +93,30 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  opacity: 0.9;
 }
 
 
-.tag-location {
+.location {
   background-color: #efefef;
   color: black;
+  opacity: 0.9;
+
 }
 
-.tag-location a:hover {
-  color: purple;
+.location a:hover {
+  color: #e01563;
+  text-decoration: underline;
+  opacity: 1;
 }
 
+.myname:hover {
+  color: #6ecadc;
+  transform: scale(1.1);
+  border: 2px solid black;
+  opacity: 1;
+
+}
 
 .background {
   text-decoration: underline;
@@ -120,7 +137,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #3eb991;
 }
 
 ul.skills {
@@ -131,14 +148,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #e9a820;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #e01563;
 }
 
 footer {
