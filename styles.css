@@ -38,7 +38,7 @@ a:hover {
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: auto;
+  padding: 0;
 }
 
 .nav .name {
