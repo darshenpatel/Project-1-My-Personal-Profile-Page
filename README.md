@@ -18,20 +18,20 @@ Project Requirements
 - [x] Don't forget to update the text for your new profile image's alt attribute!
 
 
-### Personalize all the text on the page by changing the name, background and goals. Feel free to make up the information if you do not wish to share anything personal.
+## Personalize all the text on the page by changing the name, background and goals. Feel free to make up the information if you do not wish to share anything personal.
 
 
 ## Add links to your `GitHub`, `Twitter` and `LinkedIn` accounts.
 - [x] If you don't have a Twitter or LinkedIn account, or don't want to share those, then you need to delete those links.
 
 
-### Edit the href value of the Home link so it navigates to `index.html.` Note: do not use root relative links, or links that begin with a leading forward slash, `/.`
+## Edit the href value of the Home link so it navigates to `index.html.` Note: do not use root relative links, or links that begin with a leading forward slash, `/.`
 
 
-### Feel free to expand on this project, by adding an additional page or two, adding more images and customizing the `CSS`.
+## Feel free to expand on this project, by adding an additional page or two, adding more images and customizing the `CSS`.
 
 
-### If you do not want to add an additional page then delete the experience link in the `HTML`.
+## If you do not want to add an additional page then delete the experience link in the `HTML`.
 
 
 ## Put your project files in a new GitHub repository on your `GitHub` account:
