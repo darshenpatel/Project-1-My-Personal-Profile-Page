@@ -1,4 +1,5 @@
 /* Global Layout Set-up */
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +12,7 @@ body {
   color: #222;
   background: #f7f5f0;
 }
+
 /* Link Styles */
 
 a {
@@ -32,6 +34,7 @@ a:hover {
   text-align: center;
   z-index: 1;
 }
+
 .nav {
   display: flex;
   justify-content: space-around;
@@ -47,29 +50,34 @@ a:hover {
     color: #3eb991;
     font-size: 18px;
 }
+
 .nav li {
   padding: 5px 10px 10px 10px;
 }
+
 .nav a {
   transition: all .25s;
 }
+
 .nav a:hover {
   color: #e9a820;
 }
 
-header {
+.main-header {
+  background: url('images/atlanta-downtown-skyline.jpg') no-repeat top center;
+}
+
+.contact-header {
+  background: url('images/contact-me.jpeg') no-repeat top center;
+}
+
+.main-header, .contact-header {
   text-align: center;
-  background: url('images/atlanta-downtown-skyline.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-
-
-header {
   line-height: 1.5 ;
 }
-
 
 header .profile-image {
   margin-top: 50px;
@@ -78,13 +86,12 @@ header .profile-image {
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
+  cursor: pointer;
 }
-
 
 header .profile-image:hover {
   transform: scale(1.2);
   border: 3px solid black;
-
 }
 
 .tag {
@@ -95,14 +102,13 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
   opacity: 0.9;
+  cursor: pointer;
 }
-
 
 .location {
   background-color: #efefef;
   color: black;
   opacity: 0.9;
-
 }
 
 .location a:hover {
@@ -116,7 +122,13 @@ header .profile-image:hover {
   transform: scale(1.1);
   border: 2px solid black;
   opacity: 1;
+}
 
+.contact-me:hover {
+  color: #e01563;
+  transform: scale(1.1);
+  border: 2px solid black;
+  opacity: 1;
 }
 
 .background {
@@ -127,17 +139,18 @@ header .profile-image:hover {
   text-decoration: underline;
 }
 
-.card {
+.card, .contact-card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
   transition: all .5s;
 }
-.card:hover {
+
+.card:hover, .contact-card:hover {
   border-color: #3eb991;
 }
 
@@ -157,6 +170,52 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #e01563;
+}
+
+h2 {
+  text-align: center;
+}
+
+#fname {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#lname {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+input [type=text], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+#fname:hover, #lname:hover, #message:hover {
+  border-color: #e9a820;
+}
+
+ #submit {
+  font-size: 12px;
+  background-color: #3eb991;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 footer {
@@ -190,21 +249,27 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
+
 a.twitter {
   background-image: url(images/twitter.svg);
 }
+
 a.linkedin {
   background-image: url(images/linkedin.svg);
 }
+
 a.github {
   background-image: url(images/github.svg);
 }
+
 a.social:hover {
   opacity: 1;
 }
+
 .clearfix {
   clear: both;
 }
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
@@ -218,7 +283,7 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
+  .main-header, .contact-header {
     min-height: 470px;
   }
 
